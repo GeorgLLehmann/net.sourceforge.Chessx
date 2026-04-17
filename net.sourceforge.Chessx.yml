@@ -5,7 +5,8 @@ sdk: org.kde.Sdk
 rename-icon: chessx
 command: chessx
 finish-args:
-  - --socket=x11
+  - --socket=wayland
+  - --socket=fallback-x11
   - --share=ipc
   - --socket=pulseaudio
   - --share=network
